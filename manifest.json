@@ -1,0 +1,27 @@
+{
+  "name": "Weather",
+  "description": "Shows your local weather.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting","tabs","geolocation"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/img16.png",
+      "32": "/images/img32.png",
+      "48": "/images/img48.png",
+      "128": "/images/img128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/img16.png",
+    "32": "/images/img32.png",
+    "48": "/images/img48.png",
+    "128": "/images/img128.png"
+  },
+  "options_page": "options.html",  
+  "content_scripts": []
+}

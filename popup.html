@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="button.css">
+  <link rel="stylesheet" href="fontawesome.css">
+  <meta charset="utf-8">
+  <script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="top-flex"><input class="top-input" placeholder="Location..."><div class="settings"><i class="fa-solid fa-gear"></i></div></div>
+    <div class="weather-location"></div>
+    <div class="alerts"></div>
+    <div class="loading"></div>
+    <div class="day-container"></div>
+    <div class="day-info-cards">
+      <div class="desc">
+        <div class="short-desc"></div>
+        <div class="long-desc"></div>
+      </div>
+      <div class="temperature">
+        <div class="temperature-number"></div>
+        <div class="temperature-high-or-low"></div>
+      </div>
+      <div class="wind">
+        <i class="fa-solid fa-arrow-up wind-arrow"></i>
+        <div class="wind-speed"></div>
+      </div>
+      <div class="chance-of-precipitation" style="display:none">
+        <div class="chance-number"></div>
+        <div class="chance-desc">chance of precipitation</div>
+      </div>
+    </div>
+    <div class="hour-container"></div>
+    <div class="hour-info-cards">
+      <div class="hour-info-card">
+        <div class="hour-info-number hour-day"></div>
+        <div class="hour-info-desc hour-hour"></div>
+      </div>
+      <div class="hour-info-card">
+        <div class="hour-info-number hour-temp"></div>
+        <div class="hour-info-desc">temperature</div>
+      </div>
+      <div class="hour-info-card">
+        <div class="hour-info-number hour-cop"></div>
+        <div class="hour-info-desc">chance of precipitation</div>
+      </div>
+      <div class="hour-info-card">
+        <div class="hour-info-number hour-dew"></div>
+        <div class="hour-info-desc">dewpoint</div>
+      </div>
+      <div class="hour-info-card">
+        <div class="hour-info-number hour-humid"></div>
+        <div class="hour-info-desc">humidity</div>
+      </div>
+      <div class="hour-info-card">
+        <i class="fa-solid fa-arrow-up hour-wind-arrow"></i>
+        <div class="hour-info-desc hour-wind"></div>
+      </div>
+    </div>
+  </div>
+  <div class="settings-popup" data-open="false" style="display:none">
+    <select id="degree" name="degree">
+      <option value="f">Fahrenheit</option>
+      <option value="c">Celsius</option>
+      <option value="k">Kelvin</option>
+      <option value="r">Rankine</option>
+      <option value="d">Delisle</option>
+      <option value="re">Réaumur</option>
+      <option value="ro">Rømer</option>
+    </select>
+    <select id="speed" name="speed">
+      <option value="mph">Miles per Hour</option>
+      <option value="kph">Kilometers per Hour</option>
+      <option value="lpm">Lightyears per Millennia</option>
+      <option value="mps">Meters per Second</option>
+      <option value="k">Knots</option>
+      <option value="fps">Feet per Second</option>
+    </select>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
