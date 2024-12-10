@@ -1,12 +1,9 @@
 {
   "name": "Weather",
   "description": "Shows your local weather.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": ["storage", "activeTab", "scripting","tabs","geolocation"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -22,6 +19,5 @@
     "48": "/images/img48.png",
     "128": "/images/img128.png"
   },
-  "options_page": "options.html",  
   "content_scripts": []
 }
